@@ -1,14 +1,21 @@
 import React from "react";
 import Logo from "../assets/pizzaLogo.png";
+import { Link } from "react-router-dom";
 
-function navbar() {
+function Navbar() {
   return (
     <div className="navbar">
-      <div className="leftSide"></div>
-      <img src={Logo} />
-      <div className="rightSide"></div>
+      <div className="leftSide">
+        <img src={Logo} alt="Logo" />
+      </div>
+      <div className="rightSide">
+        <Link to="/">Home</Link>
+        <Link to="/Menu">Menu</Link>
+        <Link to="/About">About</Link>
+        <Link to="/Contact">Contact</Link>
+      </div>
     </div>
   );
 }
 
-export default navbar;
+export default Navbar;
