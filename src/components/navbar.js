@@ -9,6 +9,12 @@ function Navbar() {
     <div className="navbar">
       <div className="leftSide">
         <img src={Logo} alt="Logo" />
+        <div classNamer="hiddenLinks">
+          <Link to="/">Home</Link>
+          <Link to="/Menu">Menu</Link>
+          <Link to="/About">About</Link>
+          <Link to="/Contact">Contact</Link>
+        </div>
       </div>
       <div className="rightSide">
         <Link to="/">Home</Link>
