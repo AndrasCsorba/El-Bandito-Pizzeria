@@ -1,11 +1,16 @@
 import React from "react";
 import "../styles/Home.css";
+import { Link } from "react-router-dom";
 
 function Home() {
   return (
     <div className="home">
       <div className="headerContainer">
         <h1>El Bandito's Pizzeria</h1>
+        <p>Best Pizza in Town</p>
+        <Link to="/Menu">
+          <button>Order Now</button>
+        </Link>
       </div>
     </div>
   );
