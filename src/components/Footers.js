@@ -7,7 +7,7 @@ import "../styles/Footers.css";
 
 function Footers() {
   return (
-    <div className="Footers">
+    <div className="footers">
       <div className="socialMedia">
         <InstagramIcon />
         <FacebookIcon />
