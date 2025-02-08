@@ -5,12 +5,12 @@ import BannerImage from "../assets/pizza.jpeg";
 
 function Home() {
   return (
-    <div className="home">
-      <div
-        className="headerContainer"
-        style={{
-          backgroundImage: `url(${BannerImage})`,
-        }}>
+    <div
+      className="home"
+      style={{
+        backgroundImage: `url(${BannerImage})`,
+      }}>
+      <div className="headerContainer">
         <h1>El Bandito's Pizzeria</h1>
         <p>Best Pizza in Town</p>
         <Link to="/Menu">
