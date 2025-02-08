@@ -8,7 +8,14 @@ function Menu() {
       <h1 className="menuTitel">Our Menu</h1>
       <div className="menuList">
         {MenuList.map((menuItem, key) => {
-          return <MenuItem />;
+          return (
+            <MenuItem
+              key={key}
+              image={menuItem.image}
+              name={menuItem.name}
+              price={menuItem.price}
+            />
+          );
         })}
       </div>
     </div>
