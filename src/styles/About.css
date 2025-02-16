@@ -20,10 +20,15 @@
   height: 55%;
   align-items: center;
   margin-top: 50px;
+  padding: 0 20px;
 }
 
 .aboutBottom p {
+  width: 100%;
+  max-width: 1200px;
   width: 1200px;
+  font-size: 20px;
+  margin: 0 auto;
 }
 
 .about .aboutBottom h1 {
@@ -34,4 +39,31 @@
   display: flex;
   justify-content: center;
   transform: translateY(-40px);
+}
+@media (max-width: 1200px) {
+  .aboutBottom p {
+    width: 90%;
+  }
+}
+
+@media (max-width: 768px) {
+  .aboutBottom p {
+    width: 95%;
+    font-size: 18px;
+  }
+
+  .about .aboutBottom h1 {
+    font-size: 50px;
+  }
+}
+
+@media (max-width: 480px) {
+  .aboutBottom p {
+    width: 100%;
+    font-size: 16px;
+  }
+
+  .about .aboutBottom h1 {
+    font-size: 40px;
+  }
 }
